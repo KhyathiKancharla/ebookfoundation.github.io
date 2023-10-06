@@ -1,0 +1,123 @@
+header {
+    background-color: #f4f3ee;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styles */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Align the logo and tsext vertically */
+}
+
+.logo img {
+    width: 120px; /* Adjust the width of the logo image as needed */
+    height: 50px; /* Adjust the height of the logo image as needed */
+    margin-right: 10px; /* Add some spacing between the logo and text */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Align the navigation and logo vertically */
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+/* Navigation link styles */
+nav ul li a {
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    color: #2E97A7;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f4f3ee;
+    color: #black;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Sidebar styles */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f4f3ee;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color:#2E97A7 ;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+/* Sidebar button styles */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #2E97A7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+    display: none; /* Initially hidden */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .openbtn {
+        display: block; /* Display the menu button */
+    }
+
+    nav ul {
+        display: none; /* Hide the main navigation */
+    }
+
+    /* Styles to show the sidebar when menu button is clicked */
+    .sidenav.active {
+        width: 250px;
+    }
+
+    .sidenav.active + main {
+        margin-right: 250px;
+    }
+}

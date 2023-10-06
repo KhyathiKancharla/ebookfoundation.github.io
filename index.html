@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebook Foundation</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="assets/images/ebook_logo-.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <button class="openbtn" onclick="toggleNav()">&#9776; Menu</button>
+    </header>
+
+    <!-- Sidebar navigation -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+        <a href="#">About Us</a>
+        <a href="#">Books</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <main>
+        <!-- Your main content goes here -->
+        <h2>Welcome to Our Website</h2>
+        <p>This is the main content of the page.</p>
+    </main>
+
+    <footer>
+      Ebook Foundation
+    </footer>
+
+    <script>
+        function toggleNav() {
+            var sidenav = document.getElementById("mySidenav");
+            sidenav.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
